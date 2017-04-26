@@ -89,7 +89,7 @@ void ws2812_init() {
 	TIM_Cmd(TIM4, ENABLE);
 
 
-#ifdef _FREERUNNING
+#ifdef FREERUNNING
 	// Set to Freeruning Mode (see ws2812.h)
 	DMA_Cmd(DMA1_Channel1, ENABLE);
 	TIM_Cmd(TIM4, ENABLE);
