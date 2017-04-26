@@ -34,7 +34,7 @@
  * and use the function ws2812_Refresh() to send the
  * data out.
  */
-#define _FREERUNNING
+#define FREERUNNING
 
 
 /* Number of LEDs at the String
@@ -49,8 +49,8 @@
  * With the STM32F103 it is possible to drive ~800 LEDs.
  * This are 13 Meters of LED-Strip.
  */
-#define _NUM_LED 20
-#define BUFFER_SIZE (((_NUM_LED+1)*24) + 200)
+#define NUM_LED 20
+#define BUFFER_SIZE (((NUM_LED+1)*24) + 200)
 uint8_t ws2812_buffer[BUFFER_SIZE];
 
 
